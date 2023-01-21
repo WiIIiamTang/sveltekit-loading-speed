@@ -19,6 +19,11 @@
 		for when you might have multiple asynchronous functions to run in the load function. Preload is
 		disabled on this site so you can hover over links safely.
 	</p>
+	<div>
+		<a href="https://github.com/WiIIiamTang/sveltekit-loading-speed">
+			See the Github for code examples
+		</a>
+	</div>
 	<a href="/">Reset</a>
 	<a href="/fast">Fast</a>
 	<a href="/slow">Slow</a>
