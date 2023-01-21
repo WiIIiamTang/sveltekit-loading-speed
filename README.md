@@ -80,4 +80,4 @@ All requests are made at the same time, and the page will load as soon as everyt
 
 ## Demo
 
-View the [demo](sveltekit-loading-speed.williamtang.me) to see this in action.
+View the [demo](https://sveltekit-loading-speed.williamtang.me) to see this in action.
