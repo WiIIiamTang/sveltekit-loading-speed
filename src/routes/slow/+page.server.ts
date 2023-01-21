@@ -19,4 +19,16 @@ export const load: PageServerLoad = async () => {
 		apiresult2: apiresult2, // object
 		apiresult3: apiresult3 // object
 	};
+
+	/**
+	 * Same as
+	 *
+	 * return {
+	 * 	test: true,
+	 *  apiresult: await processApiResult(await someApiLoad(), 1000),
+	 *  apiresult2: await processApiResult(await someApiLoad2(), 2000),
+	 *  apiresult3: await processApiResult(await someApiLoad3(), 0)
+	 * }
+	 *
+	 */
 };
