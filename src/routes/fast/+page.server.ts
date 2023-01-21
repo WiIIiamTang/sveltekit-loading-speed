@@ -4,17 +4,19 @@ import type { ApiData } from '../../types/data.type';
 import { processApiResult } from '$lib/server/postprocessing';
 
 export const load: PageServerLoad = async () => {
-	// Create wrappers that return a Promise
+	// In contrast with the slow page.server.ts load, this creates wrappers that return a Promise around the orginal calls
+
 	const loadApi = async () => {
 		const data: ApiData = await someApiLoad();
-		return processApiResult(data, 1000);
+		return await processApiResult(data, 1000); // process data needed for your page, blocking
 	};
 	const loadApi2 = async () => {
 		const data: ApiData = await someApiLoad2();
-		return processApiResult(data, 3000);
+		return await processApiResult(data, 2000); // process data needed for your page, blocking
 	};
 	const loadApi3 = async () => {
-		return await someApiLoad3();
+		const data: ApiData = await someApiLoad3();
+		return await processApiResult(data, 0); // process data needed for your page, blocking
 	};
 
 	return {
