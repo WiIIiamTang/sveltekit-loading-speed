@@ -16,7 +16,7 @@
 <div class="bg-slate-200 min-h-screen max-w-screen font-light">
 	<div class="h-fit w-full flex justify-center mb-8">
 		<div class="container flex justify-center items-center flex-col w-1/2">
-			<h1 class="text-4xl font-bold leading-3 py-4 mb-8">SvelteKit server loading demo</h1>
+			<h1 class="text-4xl font-bold leading-3 py-4 my-8">SvelteKit server loading demo</h1>
 			<p>
 				The SvelteKit documentation has a part that mentions <a
 					class="text-sky-800 underline font-semibold"
